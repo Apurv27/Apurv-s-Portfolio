@@ -17,40 +17,49 @@ body {
     transition: background-color 0.3s ease;
 }  
 .hc1{
-    padding-left: 100px;
-    padding-top: 150px;
-    width: 50%;
-    /* border: 2px solid white; */
-    margin: auto;
-    height: 700px;
-    float: left;
+    padding: 20px;
+        width: 100%;
+        max-width: 1200px;
+        margin: auto;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+}
+.hc1>div:first-child {
+    flex: 1 1 300px;
+    text-align: center;
 }
 
-.hc1img{
-    height: 700px;
-    width: 50%;
-    /* border: 2px solid white; */
-    
+.hc1img {
+    max-width: 100%;
+    height: auto;
+    flex: 1 1 300px;
 }
+
 .hc2{
-    height: 500px;
-    /* border: 2px solid white; */
-    
+display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
 }
 
 .hc2txt{
-    width: 70%;
-    height: 500px;
-    /* border: 2px solid white; */
-    float: left;
-    padding-left: 80px;
-    padding-top: 80px;
-
+    flex: 1 1 300px;
+        max-width: 600px;
 }
 .hc2img{
-    /* border: 2px solid white; */
-    height: 500px;
-    padding: 120px;
+    flex: 1 1 300px;
+        max-width: 300px;
+        padding: 10px;
+}
+
+.hc2img img {
+    width: 100%;
+    height: auto;
 }
 
 .hc3 {
@@ -72,6 +81,40 @@ body {
     display: flex;
     justify-content: center;
 }
+
+/*all hc media queries starts*/
+@media (max-width: 768px) {
+    .hc1 {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .hc2 {
+        flex-direction: column;
+    }
+
+    .hc2txt {
+        padding: 10px;
+    }
+
+    .hc2img {
+        padding: 10px;
+    }
+}
+@media (max-width: 480px) {
+    .hc3 h2 {
+        font-size: 1.5rem;
+    }
+
+    .hc3 h5 {
+        font-size: 1rem;
+    }
+
+    .hc3links h3 a {
+        margin: 0 8px;
+    }
+}
+/*all hc media queries ends*/
 
 a{
     color: inherit;
