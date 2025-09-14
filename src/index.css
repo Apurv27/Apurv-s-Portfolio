@@ -31,6 +31,9 @@ body {
     flex: 1 1 300px;
     text-align: center;
 }
+.hc1 h1 {
+    margin: 10px 0;
+}
 
 .hc1img {
     max-width: 100%;
