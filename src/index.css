@@ -1,0 +1,223 @@
+body {
+    background-color: #121212;
+    /* dark bg */
+    color: white;
+    padding-top: 70px;
+    /* to prevent content behind navbar */
+}
+.blur-navbar {
+    background-color: rgba(255, 255, 255, 0.1);
+    /* slight white transparency */
+    backdrop-filter: blur(10px);
+    /* blur effect */
+    -webkit-backdrop-filter: blur(10px);
+    /* Safari support */
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    /* optional soft border */
+    transition: background-color 0.3s ease;
+}  
+.hc1{
+    padding-left: 100px;
+    padding-top: 150px;
+    width: 50%;
+    /* border: 2px solid white; */
+    margin: auto;
+    height: 700px;
+    float: left;
+}
+
+.hc1img{
+    height: 700px;
+    width: 50%;
+    /* border: 2px solid white; */
+    
+}
+.hc2{
+    height: 500px;
+    /* border: 2px solid white; */
+    
+}
+
+.hc2txt{
+    width: 70%;
+    height: 500px;
+    /* border: 2px solid white; */
+    float: left;
+    padding-left: 80px;
+    padding-top: 80px;
+
+}
+.hc2img{
+    /* border: 2px solid white; */
+    height: 500px;
+    padding: 120px;
+}
+
+.hc3 {
+    height: 200px;
+    width: 100%;
+    /* border: 2px solid white; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* 👈 this is the fix */
+    text-align: center;
+    /* Optional: for centering text */
+    gap: 10px;
+    /* Optional: spacing between lines */
+}
+
+.hc2links{
+    display: flex;
+    justify-content: center;
+}
+
+a{
+    color: inherit;
+    text-decoration: none;
+}
+.footer {
+    width: 100%;
+    background-color: #111;
+    color: #fff;
+    padding: 20px 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+    flex-wrap: wrap;
+}
+
+.footer-left,
+.footer-center,
+.footer-right {
+    flex: 1;
+    text-align: center;
+}
+
+ /* .ac1{
+    padding-left: 45px;
+        padding-top: 150px;
+        width: 50%;
+        border: 2px solid white;
+
+        height: 700px;
+        float: left;
+
+}
+.ac1img {
+    height: 500px;
+    width: 640px;
+    border: 2px solid white;
+    float: left;
+    margin-top: 50px;
+    
+
+}
+.ac2{
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    height: 100%;
+    border: 2px solid white;
+    
+} */
+
+.about-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 50px;
+    gap: 20px;
+    flex-wrap: nowrap;
+}
+
+.ac1 {
+    width: 50%;
+    padding: 20px;
+    /* border: 2px solid white; */
+    color: white;
+}
+
+.ac1img-container {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 2px solid white; */
+}
+
+.ac1img {
+    max-width: 100%;
+    height: auto;
+}
+
+.ac2 {
+    /* margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 700px;
+    border: 2px solid white;
+    color: white;
+    flex-direction: column; */
+    margin-top: 40px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: white;
+        /* border: 2px solid white; */
+        padding: 20px;
+}
+.skillcard-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    /* spacing between cards */
+    max-width: 900px;
+    /* optional max width */
+    margin-top: 20px;
+}
+
+.askillcard{
+    /* border: 2px solid purple;
+    height: 100px;
+    width: 200px;
+    font-style: italic;
+    text-align: center;
+    padding-top: 10px;
+    border-radius: 5px;
+    margin-bottom: 5px; */
+    border: 1px solid purple;
+        height: 100px;
+        width: 240px;
+        font-style: italic;
+        text-align: center;
+        padding-top: 15px;
+        border-radius: 5px;
+        background-color: #1a1a1a;
+        /* optional */
+
+}
+
+
+/* --------------------- */
+
+
+iframe {
+    border-radius: 10px;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.4);
+}
+
+.btn-primary {
+    background-color: purple;
+    border: none;
+    transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #be27ec;
+    transform: scale(1.05);
+}
