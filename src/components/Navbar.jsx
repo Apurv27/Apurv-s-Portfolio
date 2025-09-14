@@ -1,11 +1,11 @@
 import React from "react";
-import { Link } from 'react-router-dom';
+import { Link } from "react-router-dom";
 
-<Link to="/about">About</Link>
+<Link to="/about">About</Link>;
 
 const Navbar = () => {
   return (
-    <nav className="navbar navbar-expand-lg fixed-top blur-navbar">
+    <nav className="navbar navbar-expand-lg fixed-top navbar-dark blur-navbar">
       <div className="container">
         <Link className="navbar-brand fw-bold fs-3 text-white" to="/">
           Apurv
