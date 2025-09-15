@@ -1,10 +1,12 @@
-body {
+body,html, .App {
     background-color: #121212;
     /* dark bg */
     color: white;
-    padding-top: 70px;
-    /* to prevent content behind navbar */
+    width: 100%;
+        margin: 0;
+        padding: 0;
 }
+
 .blur-navbar {
     background-color: rgba(255, 255, 255, 0.1);
     /* slight white transparency */
@@ -16,29 +18,40 @@ body {
     /* optional soft border */
     transition: background-color 0.3s ease;
 }  
-.hc1{
-    padding: 20px;
-        width: 100%;
-        max-width: 1200px;
-        margin: auto;
-        display: flex;
-        flex-wrap: wrap;
-        align-items: center;
-        justify-content: center;
-        gap: 20px;
+.hc1 {
+    display: flex;
+    align-items: flex-start;
+    /* Align text and image at the top */
+    justify-content: space-between;
+    padding: 50px 100px;
+    width: 100%;
+    box-sizing: border-box;
+    gap: 40px;
+    /* space between text and image */
 }
-.hc1>div:first-child {
-    flex: 1 1 300px;
-    text-align: center;
+
+.hc1text {
+    flex: 1;
+    text-align: left;
+    padding-top: 120px;
 }
-.hc1 h1 {
+
+.hc1text h1 {
     margin: 10px 0;
+}
+
+.hc1img-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    /* Align image at the top */
 }
 
 .hc1img {
     max-width: 100%;
     height: auto;
-    flex: 1 1 300px;
+    object-fit: contain;
 }
 
 .hc2{
@@ -88,9 +101,22 @@ display: flex;
 /*all hc media queries starts*/
 @media (max-width: 768px) {
     .hc1 {
-        flex-direction: column;
-        padding: 20px;
+        display: block;
+            padding: 50px 20px;
+            text-align: center;
     }
+    .hc1 h1 {
+        font-size: 1.5rem;
+        margin: 10px 0;
+        }
+     .hc1img {
+        width: 80%;
+            max-width: 400px;
+            min-width: 250px;
+            height: auto;
+            margin: 20px auto 0 auto;
+     }
+    
 
     .hc2 {
         flex-direction: column;
@@ -108,6 +134,14 @@ display: flex;
     .hc3 h2 {
         font-size: 1.5rem;
     }
+                .hc1img {
+                    width: 90%;
+                        min-width: 200px;
+                        margin: 15px auto 0 auto;
+                }
+        .hc1 h1 {
+            font-size: 1.2rem;
+        }
 
     .hc3 h5 {
         font-size: 1rem;
@@ -200,42 +234,23 @@ a{
 }
 
 .ac2 {
-    /* margin-top: 40px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 700px;
-    border: 2px solid white;
-    color: white;
-    flex-direction: column; */
     margin-top: 40px;
         display: flex;
         flex-direction: column;
         align-items: center;
         color: white;
-        /* border: 2px solid white; */
         padding: 20px;
 }
 .skillcard-container {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
-    /* spacing between cards */
-    max-width: 900px;
-    /* optional max width */
-    margin-top: 20px;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+        max-width: 900px;
+        margin-top: 20px;
 }
 
 .askillcard{
-    /* border: 2px solid purple;
-    height: 100px;
-    width: 200px;
-    font-style: italic;
-    text-align: center;
-    padding-top: 10px;
-    border-radius: 5px;
-    margin-bottom: 5px; */
     border: 1px solid purple;
         height: 100px;
         width: 240px;
@@ -244,12 +259,76 @@ a{
         padding-top: 15px;
         border-radius: 5px;
         background-color: #1a1a1a;
-        /* optional */
 
 }
 
 
 /* --------------------- */
+
+/*about css media query starts*/
+/* Tablet and smaller screens */
+@media (max-width: 768px) {
+    .about-container {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+
+    .ac1,
+    .ac1img-container {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .ac1 {
+        text-align: center;
+    }
+
+    .ac1img-container {
+        justify-content: center;
+        margin-top: 20px;
+    }
+
+    .ac1img {
+        max-width: 80%;
+        height: auto;
+    }
+
+    .ac2 {
+        padding: 10px;
+    }
+
+    .skillcard-container {
+        max-width: 100%;
+        gap: 15px;
+    }
+
+    .askillcard {
+        width: 45%;
+        height: auto;
+        padding-top: 10px;
+    }
+}
+
+/* Extra small screens */
+@media (max-width: 480px) {
+    .ac1 h1 {
+        font-size: 1.5rem;
+    }
+
+    .ac1 h4 {
+        font-size: 1rem;
+    }
+
+    .skillcard-container {
+        gap: 10px;
+    }
+
+    .askillcard {
+        width: 100%;
+    }
+}
+/*about css media query ends*/
 
 
 iframe {

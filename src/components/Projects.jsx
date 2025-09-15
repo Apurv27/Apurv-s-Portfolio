@@ -2,6 +2,7 @@ import React from "react";
 import Pro_card from "./Pro_card";
 import hpmanagment from "../assets/hpm.jpg";
 import rdpicker from "../assets/rdp.png";
+import ves from "../assets/ves.png";
 import noimage from "../assets/noimg.jpg";
 
 function Projects() {
@@ -22,6 +23,14 @@ function Projects() {
             title="Recurring Date Picker"
             tech="React.js"
             desc="A booking system to pick custom recurring dates for trips and reservations."
+          />
+        </div>
+        <div className="col-md-4">
+          <Pro_card
+            img={ves}
+            title="Voucher Entry system"
+            tech="React.js, Node.js, MySQL."
+            desc="Leading in This is a Voucher Entry System project, kinda like an erp system."
           />
         </div>
         <div className="col-md-4">

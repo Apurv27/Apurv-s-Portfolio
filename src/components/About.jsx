@@ -1,37 +1,3 @@
-// import React from 'react'
-// import aboutImg from "../assets/about.png";
-// function About() {
-//   return (
-//     <>
-//       <div>
-//         <div className="ac1">
-//           <h1>Know Who I'M</h1>
-//           <h4>
-//             Hi Everyone, I am Apurv Ramesh Jambhulkar from Bhandara, Maharashtra
-//             India. I am a fresher React developer currently teaching react in a
-//             private institute Grace. I have completed B.Sc. in Maths from RTMNU
-//             and now pursuing M.Sc. in Maths from LPU. Apart from coding, some
-//             other activities that I love to do!
-//           </h4>
-//           <ul>
-//             <li>Playing Games</li>
-//             <li>Travelling</li>
-//             <li>Teaching</li>
-//           </ul>
-//         </div>
-//         <div className="ac1img-container">
-//           <img className="ac1img" src={aboutImg} alt="" />
-//         </div>
-//       </div>
-//       <div className="ac2">
-//         <h1> PROFESSIONAL SKILLSET</h1>
-//       </div>
-//     </>
-//   );
-// }
-
-// export default About
-
 import React from "react";
 import aboutImg from "../assets/about.png";
 import SkillCard from "./SkillCard";

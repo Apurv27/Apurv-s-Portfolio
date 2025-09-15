@@ -8,12 +8,14 @@ function Home() {
     <>
       <div>
         <div className="hc1">
-          <h1>HI THERE</h1>
-          <h1>I'M APURV R. JAMBHULKAR</h1>
-          <h1>REACT DEVELOPER</h1>
-        </div>
-        <div>
-          <img className="hc1img" src={homeImg} alt="" />
+          <div className="hc1text">
+            <h1>HI THERE</h1>
+            <h1>I'M APURV R. JAMBHULKAR</h1>
+            <h1>REACT DEVELOPER</h1>
+          </div>
+          <div className="hc1img-container">
+            <img className="hc1img" src={homeImg} alt="Developer" />
+          </div>
         </div>
       </div>
       <div className="hc2">
